@@ -6,8 +6,24 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 	<title>Controle de faturas</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v7.0&appId=249156916192097&autoLogAppEvents=1"></script>
+	<script>
+	  	window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '{249156916192097}',
+	      cookie     : true,
+	      xfbml      : true,
+	      version    : '{v7.0}'
+	    });
+	      
+	    FB.AppEvents.logPageView();   
+	 	 };
+	</script>
+
 	<div id="formulario">
 	<h1>Insira seus dados</h1>	
 	<h2>e realize seu cadastro</h2>
@@ -19,6 +35,7 @@
 		<input type="email" placeholder="Confirme seu e-mail">
 		<input type="password" placeholder="Digite sua senha">
 		<input type="password" placeholder="Confirme sua senha">
+		<div class="fb-login-button" id="fb" data-size="large" data-button-type="continue_with" data-layout="rounded" data-auto-logout-link="false" data-use-continue-as="false" data-width=""></div>
 		<input type="submit" value="Cadastrar">	
 	</form>
 	</div>
