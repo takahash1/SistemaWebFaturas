@@ -6,7 +6,10 @@
 
 body{
 	background-image: url("../img/contas.jpg");
-	background-position: 95% 40%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: auto;
 	position: 100%;
 	width: 100%;
 	height: 100%;
