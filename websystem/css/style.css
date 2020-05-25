@@ -4,7 +4,7 @@
 	padding: 0px;
 }
 
-body{
+body#index{
 	background-image: url("../img/contas.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -17,7 +17,7 @@ body{
 	font-family: 'Montserrat', sans-serif;
 }
 
-input{
+input#inpLogin{
 	display: block;
 	height: 55px;
 	width: 400px;
@@ -32,26 +32,26 @@ input{
 	color: black;
 }
 
-input[type=submit]{
+input#inpLogin[type=submit]{
 	background-color: #EF4C4F;
 	outline: none;
 	cursor: pointer;
 }
 
-div#formulario{
+div#formulariologin{
 	width: 400px;
 	margin: 50px auto 0px auto;
 	outline: none;
 	text-align: center;
 }
-div#formulario1{
+div#formulariologin1{
 	width: 400px;
 	margin: 200px auto 0px auto;
 	outline: none;
 	text-align: center;
 }
 
-div#formulario h1,h2{
+div#formulariologin h1,h2{
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	padding: 20px;
@@ -66,11 +66,92 @@ a{
 	display: block;
 	text-align: center;
 }
-a:hover{
+a#indexLink:hover{
 	text-decoration: none;
 	color: grey;
 }
-
+a#fpLink:focus{
+	color:white;
+}
+a#fpLink:hover{
+	text-decoration: none;
+	color: white;
+}
 input[type=submit]:hover{
 	border: 2px solid pink;
 }
+body{
+	background-color: 
+}
+div#menu{
+	height: 50px;
+	background-color: #73B3BD;
+	background-image: linear-gradient(to bottom, #5AA9B0, #73B3BD, #68A2C3 );
+	color: white;
+}
+
+ul li{
+	font-family: 'Montserrat', sans-serif;
+	list-style: none;
+	display: inline-block;
+	float: left;
+	font-size: 21px;
+	padding: 10px;
+}
+div#tabela{
+	height: 200px;
+
+}
+tr td{
+	font-family: 'Montserrat', sans-serif;
+	border: 1px solid grey;
+	margin: 10px;
+	padding: 10px;
+	width: 400px;
+}
+#descricao{
+	width: 400px;
+}
+div#tabela{
+	width: 400px;
+	margin: 50px auto 50px auto;
+	outline: none;
+	text-align: center;
+}
+div#formularioMenu{
+	width: 10px;
+	height: 50px;
+}
+input#inpHome{
+	display: block;
+	height: 40px;
+	width: 330px;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 15px;
+	border: 1px solid lightblue;	
+	font-size: 14pt;
+	padding: 10px 20px;	
+	outline: none;
+	background-color: #E8F0FE;
+	color: black;
+}
+div#formularioMenu{
+	width: 350px;
+	margin: 50px auto 0px auto;
+	outline: none;
+	text-align: center;
+}
+
+div#formularioMenu h3{
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	padding: 20px;
+	outline: none;
+	padding: 1px;
+	font-weight: bold;
+}
+input#inpHome[type=submit]{
+	background-color: #63ACB4;
+	outline: none;
+	cursor: pointer;

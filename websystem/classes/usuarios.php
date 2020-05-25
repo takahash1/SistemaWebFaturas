@@ -12,11 +12,11 @@ Class Usuario
 		try {
 
 			$pdo = new PDO("mysql:dbname=".$nome.";host=".$host, $usuario, $senha);
-			echo "Conectado";
+			echo "";
 			
 		} catch (PDOException $e) {
 			$msgErro = $e->getMessage();
-			echo "Não conectado";
+			echo "Erro ao conectar com o banco de dados";
 		}
 
 	}
