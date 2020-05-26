@@ -47,26 +47,46 @@ if(isset($_POST['nome']))
 			{
 				if($u->cadastrar($nome, $telefone, $email, $senha))
 				{
-					echo "Cadastrado com sucesso";
+					?>
+					<div id="msg-sucesso">
+					Cadastrado com sucesso. Acesse para entrar!
+					</div>
+					<?php
 				}
 				else
 				{
-					echo "Email ja cadastrado";
+					?>
+					<div class="msg-erro">
+						 Email ja cadastrado!
+					</div>
+					<?php
 				}
 			}
 			else
 			{
-				echo "Senha e confirmar senha não conferem!";
+				?>
+				<div class="msg-erro"> 
+					Senhas não conferem!
+				</div>
+				<?php
 			}
 		}
 		else
 		{
-			echo "Erro: ".$u->msgErro;
+			?>
+			<div>
+				<?php echo "Erro: ".$u->msgErro?>
+			</div>
+			<?php
 		}
 	}
 	else
 	{
-		echo "Preencha todos os campos!"; 
+		?>
+		<div class="msg-erro">
+		Preencha todos os campos!
+		</div>
+		<?php
 	}	
 }
 

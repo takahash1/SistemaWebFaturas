@@ -83,6 +83,18 @@ input[type=submit]:hover{
 body{
 	background-color: 
 }
+div#msg-sucesso{
+	width: 250px;
+	margin: 10px auto;
+	padding: 10px;
+	background-color: rgba(100,250,114,.3);
+}
+div.msg-erro{
+	width: 250px;
+	margin: 10px auto;
+	padding: 10px;
+	background-color: rgba(250,100,114,.3);
+}
 div#menu{
 	height: 50px;
 	background-color: #73B3BD;
@@ -98,9 +110,16 @@ ul li{
 	font-size: 21px;
 	padding: 10px;
 }
+div#rdBtn{
+	padding: 0px;
+	margin: 0px;
+	float: left;
+}
 div#tabela{
 	height: 200px;
-
+	width: 400px;
+	padding: 20px auto;
+	margin: 20px auto;
 }
 tr td{
 	font-family: 'Montserrat', sans-serif;
@@ -155,3 +174,7 @@ input#inpHome[type=submit]{
 	background-color: #63ACB4;
 	outline: none;
 	cursor: pointer;
+}
+input#inpHome[type=submit]:hover{
+	color:white;
+	border: 2px solid lightblue;
