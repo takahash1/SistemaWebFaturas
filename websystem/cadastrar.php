@@ -49,7 +49,7 @@ if(isset($_POST['nome']))
 				{
 					?>
 					<div id="msg-sucesso">
-					Cadastrado com sucesso. Acesse para entrar!
+					Cadastrado com sucesso. <a id="indexLink" href="index.php"> Acesse para entrar!</a>
 					</div>
 					<?php
 				}
